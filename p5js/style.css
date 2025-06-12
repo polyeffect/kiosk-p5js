@@ -1,0 +1,40 @@
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Lexend", sans-serif;
+}
+
+a {
+    color: cadetblue;
+    text-decoration: none;
+}
+
+h3 {
+    padding: 10px 0;
+}
+
+.subheading {
+    padding: 50px 0;
+}
+
+/* Landing Page */
+.frame {
+    width: 1080px;
+    height: 1920px;
+    background-color: antiquewhite;
+    text-align: center;
+    padding-top: 200px;
+}
+
+/* Main Page */
+
+/* Sub Page */
+#myBtn {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+}
