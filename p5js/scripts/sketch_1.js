@@ -1,6 +1,13 @@
+let img1, img2, img3;
+
+function preload() {
+    img1 = loadImage('/images/header_cat_1.jpg');
+    img2 = loadImage('/images/header_cat_2.jpg');
+    img3 = loadImage('/images/header_cat_3.jpg');
+}
+
 function setup() {
     createCanvas(1080, 550, document.getElementById('sketch'));
-    background(127);
     noStroke();
 }
 
@@ -9,18 +16,22 @@ function draw() {
     let imgNum = sec % 3;
 
     if (imgNum == 0) {
-        drawIndicator(500, 520, true);
-        drawIndicator(518, 520, false);
-        drawIndicator(536, 520, false);
+        image(img1, 0, 0);
+        drawIndicator(517, 520, true);
+        drawIndicator(535, 520, false);
+        drawIndicator(553, 520, false);
     } else if (imgNum == 1) {
-        drawIndicator(500, 520, false);
-        drawIndicator(518, 520, true);
-        drawIndicator(536, 520, false);
+        image(img2, 0, 0);
+        drawIndicator(517, 520, false);
+        drawIndicator(535, 520, true);
+        drawIndicator(553, 520, false);
     } else if (imgNum == 2) {
-        drawIndicator(500, 520, false);
-        drawIndicator(518, 520, false);
-        drawIndicator(536, 520, true);
+        image(img3, 0, 0);
+        drawIndicator(517, 520, false);
+        drawIndicator(535, 520, false);
+        drawIndicator(553, 520, true);
     } 
+    
 }
 
 function drawIndicator(x, y, f) {
