@@ -6,10 +6,11 @@
 
 body {
     font-family: "Lexend", sans-serif;
+    color: antiquewhite;
 }
 
 a {
-    color: cadetblue;
+    color: lightgreen;
     text-decoration: none;
 }
 
@@ -25,16 +26,22 @@ h3 {
 .frame {
     width: 1080px;
     height: 1920px;
-    background-color: antiquewhite;
+    background-color: darkslategray;
     text-align: center;
     padding-top: 200px;
 }
 
-/* Main Page */
+/* Banner Page */
 
-/* Sub Page */
-#myBtn {
-    width: 100px;
-    height: 100px;
-    background-color: aqua;
+/* Gallery Page */
+#gallery-canvas-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.arrow {
+    user-select: none;
+    cursor: pointer;
+    padding: 200px 15px;
 }
